@@ -83,7 +83,7 @@ input, button{
     display: none;
 }
 
-.screen-2{
+.screen-2-container{
     font-size: 2rem;
     font-weight: bold;
     display: flex;
@@ -92,6 +92,7 @@ input, button{
 
 .screen-2 p{
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .play-again-btn{
@@ -100,4 +101,11 @@ input, button{
     align-self: center;
     width: 14rem;
     height: 4rem;
+}
+
+@media (max-width: 520px){
+    .main-bg{
+        width: 90vw;
+        height: 330px
+    }
 }

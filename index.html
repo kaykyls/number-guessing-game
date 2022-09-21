@@ -12,22 +12,25 @@
 <body>
     <main class="main-bg">
         <div class="main-container">
-            <div class="screen-1 hide">
+            <div class="screen-1">
                 <div class="main-texts">
                     <h1>Jogo da Advinhação</h1>
                     <p>Advinhe o número entre 0 e 10</p>
                 </div>
-                <div class="try-container">
+                <form class="try-container">
                     <input class="try-input" type="number"></input>
-                    <button class="try-btn">Tentar</button>
+                    <button onclick="mouseClick(event)" class="try-btn">Tentar</button>
+                </form>
+            </div>
+            <div class="screen-2 hide">
+                <div class="screen-2-container">
+                    <p>Acertou em X tentativas</p>
+                    <button class="play-again-btn">Jogar Novamente</button>
                 </div>
             </div>
-            <div class="screen-2">
-                <p>Acertou em X tentativas</p>
-                <button class="play-again-btn">Jogar Novamente</button>
-            </div>
             
-        </div>   
+        </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
